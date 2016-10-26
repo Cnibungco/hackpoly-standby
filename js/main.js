@@ -41,27 +41,7 @@ jQuery(function($) {'use strict',
 		interval: false
 	});
 	//FAQ
-	$(".iconbox-desc").hide();
-
-		if (/Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent)) {
-			$(".iconbox").toggle(
-				function() {
-					$(this).find(".iconbox-desc").show();
-					$(this).find(".iconbox-title").css({ 'color':'#3498db', 'font-size': '150%' });
-				}, function() {	
-					$(".iconbox-desc").hide();
-				}
-			)		
-		} else {
-			$(".iconbox").hover(
-				function() {
-					$(this).find(".iconbox-desc").show();
-					$(this).find(".iconbox-title").css({ 'color':'#3498db', 'font-size': '150%' });
-				}, function() {	
-					$(".iconbox-desc").hide();
-				}
-			)	
-		}
+	
 
 
 	// Contact form validation
